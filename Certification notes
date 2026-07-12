@@ -1,0 +1,23 @@
+No test accounts are required. Yunque has no login system, no user
+accounts, and no server component of any kind - it's a local Markdown
+editor that reads and writes files on the tester's own machine.
+
+FIRST LAUNCH: On first launch, Yunque shows a one-time End User License
+Agreement screen that must be accepted (checkbox + "Accept" button)
+before the app becomes usable. This is expected behavior, not a bug.
+
+EXPORT FEATURE: Yunque includes an optional "Export" feature (icon in
+the left sidebar) that converts the open document to PDF, DOCX, HTML,
+ODT, or plain text. This feature requires pandoc
+(https://pandoc.org), a separate open-source program, to be installed
+on the machine - Yunque does not bundle it. If pandoc is not installed
+on the test machine, clicking Export and choosing a format will show an
+error message explaining that pandoc could not be found. This is
+expected behavior, not a malfunction. To fully test Export, install
+pandoc first (a simple installer is available at
+https://pandoc.org/installing.html), or the feature can be skipped
+during review, as it does not affect any other part of the app.
+
+No features are hidden, conditional, or require unlocking. No
+dependencies on other Microsoft or third-party products besides the
+optional pandoc integration described above.
